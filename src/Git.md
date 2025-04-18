@@ -2,7 +2,7 @@
 
 ## Cmds
 
-<!-- Create branch  -->
+<!-- Create a new branch from current branch -->
 
 -> git checkout -b <branch-name>
 
@@ -10,38 +10,54 @@
 
 -> git push origin <branch-name>
 
-<!-- Fetch updates from remote repos -->
+<!-- Fetch updates from all remote repos -->
 
 -> git fetch
 
-<!--List all branch-->
+<!-- List all local branches -->
 
 -> git branch
 
-<!--   List all branch local and all  -->
+<!-- List all branches (local + remote) -->
 
 -> git branch -a
 
-<!-- List all remote-tracking branches (branches from the remote repository) -->
+<!-- List all remote-tracking branches -->
 
 -> git branch -r
 
-<!-- Push local commits to the remote repository (default remote and branch) -->
+<!-- Push local commits to the current remote branch -->
 
 -> git push
 
-<!-- Remote repo latest chnage fetch and up to date -->
+<!-- Fetch & merge latest changes from origin/main -->
 
 -> git pull origin main
 
-<!-- # Switch to the local 'main' branch (creates it if it doesn't exist, based on origin/main) -->
+<!-- Switch to local 'main' branch -->
 
 -> git checkout main
 
-<!-- Branch merge into main repo -->
+<!-- Merge specific branch into current branch (e.g., main) -->
 
 -> git merge <branch-name>
 
-<!--Push into main branch-->
+<!-- Push updates to remote 'main' -->
 
 -> git push origin main
+
+<!--  Check current status -->
+
+-> git status
+
+<!-- Clone a repo -->
+
+-> git clone <repo-url>
+
+<!-- Stage files for commit -->
+
+-> git add <file> OR git add .
+
+<!-- Commit staged files -->
+
+-> git commit -m "Your commit message"
