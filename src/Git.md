@@ -2,62 +2,106 @@
 
 ## Cmds
 
-<!-- Create a new branch from current branch -->
+**Create a new branch from current branch**
 
--> git checkout -b <branch-name>
+```cmd
+git checkout -b <branch-name>
+```
 
-<!-- Push branch into remote repo -->
+**Switch to local 'main' branch**
 
--> git push origin <branch-name>
+```cmd
+git checkout main
+```
 
-<!-- Fetch updates from all remote repos -->
+**List all local branches**
 
--> git fetch
+```cmd
+git branch
+```
 
-<!-- List all local branches -->
+**List all branches (local + remote)**
 
--> git branch
+```cmd
+git branch -a
+```
 
-<!-- List all branches (local + remote) -->
+**List all remote-tracking branches**
 
--> git branch -a
+```cmd
+git branch -r
+```
 
-<!-- List all remote-tracking branches -->
+## Pushing & Pulling
 
--> git branch -r
+**Push branch into remote repo**
 
-<!-- Push local commits to the current remote branch -->
+```cmd
+git push origin <branch-name>
+```
 
--> git push
+**Push updates to remote 'main'**
 
-<!-- Fetch & merge latest changes from origin/main -->
+```cmd
+git push origin main
+```
 
--> git pull origin main
+**Push local commits to the current remote branch**
 
-<!-- Switch to local 'main' branch -->
+```cmd
+git push
+```
 
--> git checkout main
+**Fetch updates from all remote repos**
 
-<!-- Merge specific branch into current branch (e.g., main) -->
+```cmd
+git fetch
+```
 
--> git merge <branch-name>
+**Fetch & merge latest changes from origin/main**
 
-<!-- Push updates to remote 'main' -->
+```cmd
+git pull origin main
+```
 
--> git push origin main
+## Merging
 
-<!--  Check current status -->
+**Merge a specific branch into current branch**
 
--> git status
+```cmd
+git merge <branch-name>
+```
 
-<!-- Clone a repo -->
+## Working with Files
 
--> git clone <repo-url>
+**Stage files for commit**
 
-<!-- Stage files for commit -->
+```cmd
+git add <file>
+```
 
--> git add <file> OR git add .
+**Stage all files**
 
-<!-- Commit staged files -->
+```cmd
+git add .
+```
 
--> git commit -m "Your commit message"
+**Commit staged files**
+
+```cmd
+git commit -m "Your commit message"
+```
+
+## Status & Cloning
+
+**Check current status**
+
+```cmd
+git status
+```
+
+**Clone a repository**
+
+```cmd
+git clone <repo-url>
+```
